@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavorites - We have your flav flavors</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Flavorites</div>
+            <div class="mobile-menu">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">${cart.length}</span>)</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Flavorites</h1>
+            <p>We have your flav flavors</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="container" id="products">
+        <h2 style="text-align:center; margin:3rem 0; font-size:2.5rem; color:var(--secondary);">Our Premium Vapes</h2>
+        <div class="products">
+            <div class="product-card" data-id="1">
+                <img src="../Assets/vape1.jpg" alt="Strawberry Lavender Vape Pen">
+                <div class="product-info">
+                    <h3>Strawberry Lavender Vape Pen</h3>
+                    <p>Sweet strawberry fused with calming lavender — perfect all-day vape.</p>
+                    <p class="price">$3,000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Repeat for 5 more — I'll give you the full list in one block below -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Flavorites | Nicoi Carnegie | 2202835</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

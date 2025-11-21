@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Flavorites</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Flavorites</div>
+            <div class="mobile-menu">Menu</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="padding:4rem 0;">
+        <h2 style="text-align:center; color:var(--secondary); margin-bottom:2rem;">Your Cart</h2>
+        
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filled by JS -->
+            </tbody>
+        </table>
+
+        <div style="max-width:500px; margin:2rem auto; background:#1e1e1e; padding:2rem; border-radius:var(--radius);">
+            <p><strong>Subtotal:</strong> <span id="subtotal">$0</span></p>
+            <p style="color:#ff6b6b;"><strong>Discount (10% over $10,000):</strong> <span id="discount">$0</span></p>
+            <p><strong>Tax (16% GCT):</strong> <span id="tax">$0</span></p>
+            <p style="font-size:1.5rem; color:var(--secondary);"><strong>Total:</strong> <span id="total">$0</span></p>
+            
+            <button id="clear-cart" class="btn" style="background:#ff4444; margin:1rem 0;">Clear All</button>
+            <button id="checkout-btn" class="btn" style="width:100%;">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
